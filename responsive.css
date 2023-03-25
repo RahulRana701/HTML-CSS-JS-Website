@@ -1,0 +1,328 @@
+@media only screen and (max-width:966px) {
+    .tags ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #places {
+        height: 750px;
+    }
+
+    .in h1 {
+        font-size: 1.4rem;
+    }
+
+    .in h3 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .in input {
+        padding: 7px 38px;
+        border-radius: 8px;
+    }
+
+    .great h3 {
+        font-size: 1rem;
+    }
+
+    .basic .great h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .basic1 .great p {
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    .basic2-img p {
+        text-align: center;
+        font-size: .7rem;
+    }
+
+    .basic2-img h5 {
+        text-align: center;
+        font-size: .8rem;
+    }
+
+    .basic2-img img {
+        height: 102px;
+        width: 121px;
+    }
+
+    .basic3 h3 {
+
+        padding: 9px 16px;
+        font-size: .8rem;
+    }
+
+    .plan h2 {
+        font-size: 1rem;
+    }
+
+    .plan p {
+
+        font-size: .9rem;
+    }
+
+    .plan li a {
+        font-size: .75rem;
+    }
+
+    .visit h2 {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .experience1 {
+        width: 330px;
+    }
+
+    .experience1 h4 {
+        font-size: .8rem;
+    }
+
+    .experience1 p {
+        font-size: .7rem;
+
+    }
+
+    .experience2 {
+        width: 330px;
+    }
+
+    .experience2 h4 {
+        font-size: .8rem;
+    }
+
+    .experience2 p {
+        font-size: .7rem;
+
+    }
+
+    .experience3 {
+        width: 330px;
+    }
+
+    .experience3 h4 {
+        font-size: .8rem;
+    }
+
+    .experience3 p {
+        font-size: .7rem;
+
+    }
+
+    .end1 {
+        font-size: .8rem;
+    }
+
+    .end2 {
+        font-size: .8rem;
+    }
+
+    .end3 {
+        font-size: .8rem;
+    }
+
+    .copy p {
+        font-size: .8rem;
+    }
+
+    .logo img {
+        height: 69px;
+        width: 73px;
+    }
+
+    .navbarlist li a {
+        text-decoration: none;
+        font-size: .7rem;
+    }
+
+    .bts li a {
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width:764px) {
+    .burger {
+        display: block;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        transition: all .8s ease-out;
+        height: 270px;
+    }
+
+    .logo img {
+        display: block;
+        margin: auto;
+    }
+
+    .navbarlist {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .navbarlist li a {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .bts {
+        display: flex;
+        justify-content: center;
+    }
+
+    .h-class {
+        height: 40px;
+    }
+
+    .v-class {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width:472px) {
+    .in h1 {
+        font-size: 1.1rem;
+    }
+
+    .in h3 {
+        font-size: .8rem;
+        text-align: center;
+    }
+
+    .in input {
+        padding: 2px 20px;
+        border-radius: 8px;
+    }
+
+    .great h3 {
+        font-size: .8rem;
+    }
+
+    .basic .great h1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .basic1 .great p {
+        text-align: center;
+        font-size: .7rem;
+    }
+    .basic2-img{
+        margin: 0;
+    }
+    .basic2-img img {
+        height: 81px;
+        width: 96px;
+    }
+
+    .basic2-img h5 {
+        text-align: center;
+        font-size: .6rem;
+    }
+
+    .basic2-img p {
+        text-align: center;
+        font-size: .5rem;
+    }
+
+    .basic3 h3 {
+        padding: 9px 16px;
+        font-size: .6rem;
+    }
+
+    .plan h2 {
+        font-size: .8rem;
+    }
+
+    .plan p {
+        font-size: .8rem;
+    }
+
+    .plan li a {
+        font-size: .6rem;
+    }
+
+    .visit h2 {
+        text-align: center;
+        font-size: .8rem;
+    }
+    .visit p {
+        text-align: center;
+        font-size: .7rem;
+    }
+    
+    .experience1 {
+        width: 330px;
+    }
+
+    .experience1 h4 {
+        font-size: .6rem;
+    }
+
+    .experience1 p {
+        font-size: .5rem;
+
+    }
+
+    .experience2 {
+        width: 330px;
+    }
+
+    .experience2 h4 {
+        font-size: .6rem;
+    }
+
+    .experience2 p {
+        font-size: .5rem;
+
+    }
+
+    .experience3 {
+        width: 330px;
+    }
+
+    .experience3 h4 {
+        font-size: .6rem;
+    }
+
+    .experience3 p {
+        font-size: .5rem;
+
+    }
+
+    .end1 {
+        font-size: .6rem;
+    }
+
+    .end2 {
+        font-size: .6rem;
+    }
+
+    .end3 {
+        font-size: .6rem;
+    }
+    .copy p{
+        font-size: .6rem;
+    }
+}
+@media only screen and (max-width:354px){
+    .basic {
+        height: 1100px;
+    }
+    .in h1 {
+        text-align: center;
+    }
+    .basic2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

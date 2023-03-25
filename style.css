@@ -1,0 +1,507 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR  */
+/*  IF WE WANT TO APPLY HAMBURGER WE HAVE TO DO THIS , WE HAVE TO APPLY IMAGE IN NAVBAR ITSLEF   */
+/* and give that background to main as well so that during hamburger our image doesn't get disturbed */
+
+/* VERY IMPORTANT RAHULs */
+/* if you want your hamburger to be successfull apply images seperately on each container */
+/* or we can apply one image in navbar and  main container both(means apply the background in navbar 
+and use that background in main container as well and increase main's height) in this in hameburger case
+when we open and close it our images will not get destroyed*/
+
+/* Earlier our image was getting destroyed because we set it according to navbar , if navbar positon was increased or decreased our image was getting destroyed */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-family: 'PT Serif Caption', serif;
+}
+.background{
+background: black url("./images/mainbody/hd-wallpaper-3021072.jpg");
+background-size: cover;
+background-blend-mode:lighten;
+}
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin-left: 8px;
+    margin-top: 1.8px;
+    filter: invert(100%);
+}
+
+.navbarlist {
+    display: flex;
+    margin-top: 20px;
+}
+
+.navbarlist li {
+    list-style: none;
+}
+
+.navbarlist li a {
+    text-decoration: none;
+    font-size: .9rem;
+    margin-left: 24px;
+    margin-right: 24px;
+    color: white;
+    font-weight: bolder;
+}
+
+.navbarlist li a:hover {
+    font-size: 1.3rem;
+}
+
+.bts {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.bts li {
+    border: 2px solid white;
+    border-radius: 7px;
+    list-style: none;
+    height: 21px;
+    margin: 4px;
+    padding-bottom: 20px;
+}
+
+.bts li a {
+    text-decoration: none;
+    padding: 4px 8px;
+    color: white;
+    padding: 4px 18px;
+    font-size: .9rem;
+}
+
+.bts li a:hover {
+    border: none;
+    background-color: white;
+    color:blue;
+    border-radius: 7px;
+}
+
+/* BURGER */
+.burger{
+    display: none;
+   position: absolute;
+   top: 15px;
+   right: 5%;
+   cursor: pointer;
+}
+.line{
+    width: 28px;
+    background-color: white;
+    height: 3px;
+    margin: 3px 3px;
+}
+
+/* MAIN BODY */
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 769px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'PT Serif Caption', serif;
+}
+
+.in h1 {
+    font-size: 2rem;
+}
+
+.in {
+    margin: 13px 12px;
+}
+
+.in input {
+    padding: 8px 141px;
+    border-radius: 8px;
+
+}
+
+/* BASIC INFO BODY */
+.basic {
+    height: 600px;
+    position: relative;
+    font-family: 'PT Serif Caption', serif;
+}
+
+.basic1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.great {
+    margin: 6px;
+}
+
+.basic .great h3 {
+    text-align: center;
+    color: grey;
+}
+
+.basic .great h1 {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.basic1 .great p {
+    text-align: center;
+    color: grey;
+}
+
+.basic2 {
+    display: flex;
+    justify-content: space-evenly;
+   align-items: center;
+}
+
+.basic2-img {
+    height: 260px;
+    margin: 4px;
+    padding: 7px;
+    color: grey;
+}
+
+.basic2-img img {
+    height: 130px;
+    width: 140px;
+    display: block;
+    margin: auto;
+
+}
+
+.basic2-img h5 {
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.basic2-img p {
+    text-align: center;
+}
+
+.basic3 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.basic3 h3 {
+    border-radius: 8px;
+    display: inline;
+    padding: 9px 26px;
+    background-color: rgb(78, 178, 241);
+    box-shadow: 2px 2px 4px rgb(78, 178, 241);
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.basic::before {
+    content: "";
+    position: absolute;
+    background: url("./images/basicinfo/vecteezy_abstract-white-and-light-gray-wave-modern-soft-luxury_.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+/* START PLANNING BLOCK */
+#start {
+    height: 500px;
+    background: url("./images/startplanning/10751.jpg") no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'PT Serif Caption', serif;
+}
+
+.plan {
+    margin-bottom: 18px;
+    margin-top: 8px;
+}
+
+.plan h2 {
+    text-shadow: 3px 3px 4px rgb(29, 24, 24);
+}
+
+
+.plan li {
+    list-style: none;
+}
+
+.plan p {
+    color: grey;
+}
+
+.plan li a {
+    text-decoration: none;
+    background-color: rgb(78, 178, 241);
+    box-shadow: 2px 2px 4px rgb(78, 178, 241);
+    color: white;
+    padding: 9px 26px;
+    border-radius: 8px;
+}
+/* PLACES BLOCK */
+#places {
+    position: relative;
+    height: 650px;
+    font-family: 'PT Serif Caption', serif;
+}
+/* jb height set na baith rhi ho before wali to px mei laga do height */
+#places::before {
+    content: "";
+    position: absolute;
+    background: url("./images/placestovisit/grunge-gray-concrete-textured-background.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .3;
+}
+
+.visit {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+.visit p {
+    text-align: center;
+    text-shadow: 4px 4px 8px rgb(104, 94, 94);
+}
+
+.visit h2 {
+    text-align: center;
+    text-shadow: 4px 4px 8px rgb(104, 94, 94);
+    font-size: 1.4rem;
+}
+
+.tags ul {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-evenly;
+}
+
+.tags ul li {
+    list-style: none;
+}
+
+.tags ul li a {
+    text-decoration: none;
+    display: block;
+    width: 160px;
+    text-align: center;
+    border: 2px solid rgb(78, 178, 241);
+    padding: 4px 13px;
+    border-radius: 8px;
+    color: rgb(78, 178, 241);
+    box-shadow: 2px 2px 5px rgb(78, 178, 241);
+    font-size: .8rem;
+}
+
+.tags ul li a:hover {
+    border: none;
+    background-color: rgb(78, 178, 241);
+    color: white;
+}
+
+.wonder {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+
+.experience1 {
+    background: url("./images/placestovisit/evening-1038148.jpg") no-repeat center center/cover;
+    box-shadow: 8px 8px 8px rgb(128, 125, 125);
+    border-radius: 8px;
+    height: 300px;
+    width: 400px;
+}
+
+.experience1 h4 {
+    padding-left: 18px;
+    margin-top: 12px;
+    color: white;
+    font-size: .9rem;
+}
+
+.experience1 p {
+    margin-top: 220px;
+    padding-left: 15px;
+    font-weight: bolder;
+    color: white;
+    font-size: .9rem;
+}
+
+.experience2 {
+    background: url("./images/placestovisit/elephants-2923917.jpg") no-repeat center center/cover;
+    box-shadow: 8px 8px 8px rgb(128, 125, 125);
+    border-radius: 8px;
+    height: 300px;
+    width: 400px;
+}
+
+.experience2 h4 {
+    padding-left: 18px;
+    margin-top: 12px;
+    color: white;
+    font-size: .9rem;
+}
+
+.experience2 p {
+    margin-top: 220px;
+    padding-left: 15px;
+    font-weight: bolder;
+    color: white;
+    font-size: .9rem;
+}
+
+.experience3 {
+    background: url("./images/placestovisit/surfing-2212948.jpg") no-repeat center center/cover;
+    box-shadow: 8px 8px 8px rgb(128, 125, 125);
+    border-radius: 8px;
+    height: 300px;
+    width: 400px;
+}
+
+.experience3 h4 {
+    padding-left: 18px;
+    margin-top: 12px;
+    color: white;
+    font-size: .9rem;
+}
+
+.experience3 p {
+    font-weight: bolder;
+    margin-top: 220px;
+    padding-left: 15px;
+    color: white;
+    font-size: .9rem;
+}
+
+#end {
+    display: flex;
+    justify-content: space-evenly;
+    height: 405px;
+    background: rgb(5, 55, 96);
+    color: white;
+    font-family: 'PT Serif Caption', serif;
+}
+
+.end1 {
+    width: 200px;
+    margin-top: 15px;
+    font-size: .9rem;
+}
+
+.end1 li {
+    list-style: none;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.end1 li:hover {
+    text-decoration: underline;
+}
+
+.end1 li:nth-child(2) {
+    margin-top: 20px;
+}
+
+.end1 li:nth-child(6) {
+    margin-top: 15px;
+}
+
+.end1 li:nth-child(8) {
+    margin-top: 15px;
+}
+
+.end2 {
+    margin-top: 15px;
+    width: 200px;
+    font-size: .9rem;
+}
+
+.end2 li {
+    list-style: none;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.end2 li:hover {
+    text-decoration: underline;
+}
+
+.end2 li:nth-child(2) {
+    margin-top: 20px;
+}
+
+.end2 li:nth-child(3) {
+    margin-top: 10px;
+}
+
+.end2 li:nth-child(4) {
+    margin-top: 10px;
+}
+
+.end2 li:nth-child(5) {
+    margin-top: 10px;
+}
+
+.end3 {
+    margin-top: 15px;
+    font-size: .9rem;
+}
+
+.end3 li {
+    list-style: none;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.end3 li:hover {
+    text-decoration: underline;
+}
+
+.end3 p {
+    padding: 8px 10px;
+}
+
+.end3 .logo {
+    margin-top: 15px;
+    padding: 4px 7px;
+}
+
+.end3 .logo img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.copy {
+    background: rgb(5, 55, 96);
+    color: white;
+    height: 70px;
+}
+
+.copy p {
+    font-family: 'PT Serif Caption', serif;
+    text-align: center;
+    font-size: .9rem;
+}
